@@ -1,4 +1,4 @@
-# Obtencion de precios historicos de acciones del S&P500
+# Historial de precios de acciones del S&P500
 
 ## Obtención de datos en formato .csv
 
