@@ -13,3 +13,11 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 
 
 ## Creación de base de datos SQL (PostgreeSQL) e importación de ficheros .csv
+
+Se crea un nueva base de datos con nombre *sp500* y dentro de esta el esquema *public*, dentro del cual se generan una tabla para almacenar los datos con el siguiente código:
+
+
+
+
+
+
