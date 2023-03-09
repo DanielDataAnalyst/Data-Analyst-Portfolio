@@ -7,7 +7,7 @@ Para la obtención de los valores históricos de las acciones del S&P 500 se hiz
 El código de esta utiliza como punto de partida el fichero en Excel [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) el que contiene un listado con los simbolos de este índice. La macro toma cada uno de estos, le aplica la funcion **STOCKHISTORY** en un período de tiempo comprendido entre el 01-01-2010 y el 26-01-2023 y genera un archivo .csv por cada stock en un formato adecuado para su manipulación posterior.
 Se generan los siguientes campos con registros diarios en el periodo antes mencionado: 
 
-*Nombre abreviado stock*, *fecha* , *Precio apertura*, *Precio cierre*, *Máximo*, *Mínimo*, *Volumen*
+*Ticker accion*, *fecha* , *Precio apertura*, *Precio cierre*, *Máximo*, *Mínimo*, *Volumen*
 
 El código de esta macro se encuentra disponible en los archivos del repositorio con el nombre [crear_csv.bas](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/crear_csv.bas)
 
