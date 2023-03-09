@@ -1,6 +1,6 @@
 # Obtencion de precios historicos de acciones del S&P500
 
-## Obtencion de libros Excel
+## Obtención de datos en formato .csv
 
 Para la obtencion de los valores historicos de las acciones del S&P 500 se hizo uso de la funcion de Excel **STOCKHISTORY** combinada con una macro de Excel, el codigo de esta macro se encuentra disponible en los archivos del repositorio con el nombre [crear_csv.bas](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/crear_csv.bas)
 
