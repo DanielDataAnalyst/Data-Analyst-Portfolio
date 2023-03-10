@@ -16,7 +16,22 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 
 Se crea un nueva base de datos con nombre *sp500* y el esquema *public*, dentro del cual se generan una tabla para almacenar los datos con el siguiente código:
 
+```
+--Creación de la tabla para almacenar los archivos. csv
 
+CREATE TABLE IF NOT EXISTS public.historic_values
+(
+	Ticker_Stock      VARCHAR(6) NOT NULL,
+	Fecha             DATE NOT NULL,
+	Precio_apertura   NUMERIC(8,2), 
+	Precio_cierre     NUMERIC(8,2),
+	Maximo            NUMERIC(8,2),
+	Minimo            NUMERIC(8,2), 
+	Volumen           INTEGER,
+	CONSTRAINT historic_values_fecha_simbolo PRIMARY KEY (Ticker_Stock, Fecha)
+)
+
+```
 
 
 
