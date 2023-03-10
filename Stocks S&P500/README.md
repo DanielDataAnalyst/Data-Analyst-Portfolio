@@ -11,6 +11,8 @@ Se generan los siguientes campos con registros diarios en el periodo antes menci
 
 El código de esta macro se encuentra disponible en los archivos del repositorio con el nombre [crear_csv.bas](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/crear_csv.bas)
 
+*Nota: La macro esta creada considerando que los .csv se almacenaran en un carpeta de OneDrive donde no es necesario confirmar el guardado.
+
 
 ## Creación de base de datos SQL (PostgreSQL) e importación de ficheros .csv
 
