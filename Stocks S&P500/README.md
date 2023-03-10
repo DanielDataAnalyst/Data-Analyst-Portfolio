@@ -12,7 +12,7 @@ Se generan los siguientes campos con registros diarios en el periodo antes menci
 El código de esta macro se encuentra disponible en los archivos del repositorio con el nombre [crear_csv.bas](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/crear_csv.bas)
 
 
-## Creación de base de datos SQL (PostgreeSQL) e importación de ficheros .csv
+## Creación de base de datos SQL (PostgreSQL) e importación de ficheros .csv
 
 Se crea un nueva base de datos con nombre *sp500* y el esquema *public*, dentro del cual se generan una tabla para almacenar los datos con el siguiente código:
 
