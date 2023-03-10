@@ -16,7 +16,7 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 
 Se crea un nueva base de datos con nombre *sp500* y el esquema *public*, dentro del cual se generan una tabla para almacenar los datos con el siguiente código:
 
-```
+```SQL
 --Creación de la tabla para almacenar los archivos. csv
 
 CREATE TABLE IF NOT EXISTS public.historic_values
