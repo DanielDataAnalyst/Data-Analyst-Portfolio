@@ -4,12 +4,12 @@ Sub CrearLibros()
 Dim rangoNombres As Range
 Set rangoNombres = Worksheets("Stock_List").Range("A2:A504") 'Cambia "Stock_List" por el nombre de la hoja donde está tu tabla
 
-'Colocar entre comillas la direccion donde se encuentre el fichero .xlsm que contiene la tabla con el listado de acciones 
+'Colocar direccion de almacenamiento de los .csv 
 rutaDestino = "" 
 
 'Fecha inicial y final para obtener los valores diarios
 fechaInicial = "1-1-2010"
-fechaFinal = "1-26-2023"
+fechaFinal = "12-31-2022"
 Rango = 0
 
 'Bucle para la creacion de los archivos .csv  
@@ -34,7 +34,7 @@ For Each celda In rangoNombres
     Selection.NumberFormat = "0.00"
     Columns("G:G").Select
     Selection.NumberFormat = "0"
-    ActiveWorkbook.SaveAs Filename:=strRuta & celda.Value & ".csv", FileFormat:=xlCSV
+    ActiveWorkbook.SaveAs Filename:=rutaDestino & celda.Value & ".csv", FileFormat:=xlCSV
     ActiveWorkbook.Close
 Next
 
