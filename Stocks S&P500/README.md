@@ -16,7 +16,7 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 
 ## 2. Importación y limpieza de datos
 
-### 2.1 Creacion de la base de datos tablas
+### 2.1 Creacion de la base de datos y tablas
 
 Se creó un base de datos SQL (PostgreSQL) en donde se realizaron los procesos de importación y limpieza de los archivos .csv, a esta se nombró *sp500* y dentro del esquema *public* se generó una tabla con el siguiente código para almacenar los datos:
 
