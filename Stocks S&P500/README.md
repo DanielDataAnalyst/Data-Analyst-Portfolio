@@ -2,7 +2,7 @@
 
 ## Obtención de datos en formato .csv
 
-Para la obtención de los valores históricos de las acciones del S&P 500 se utilizo la funcion de Excel **STOCKHISTORY** combinada con una macro de Excel. 
+Para la obtención de los valores históricos de las acciones del S&P 500 se utilizo la función de Excel **STOCKHISTORY** combinada con una macro de Excel. 
 
 El código de esta utiliza como punto de partida el fichero en Excel [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) el que contiene un listado con los simbolos de este índice. La macro toma cada uno de estos, le aplica la funcion **STOCKHISTORY** en un período de tiempo comprendido entre el 01-01-2002 y el 31-12-2022 y genera un archivo .csv por cada stock en un formato adecuado para su manipulación posterior.
 Se generan los siguientes campos con registros diarios en el periodo antes mencionado: 
@@ -16,7 +16,7 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 
 ## Importación y limpieza de datos
 
-Se creo un base de datos SQL (PostgreSQL) en donde se realizara la importación y limpieza de los archivos. csv, a esta se nombró *sp500* y dentro del esquema *public*, generó una tabla con el siguiente código para almacenar los datos:
+Se creo un base de datos SQL (PostgreSQL) en donde se realiza la importación y limpieza de los archivos. csv, a esta se nombró *sp500* y dentro del esquema *public*,  se generó una tabla con el siguiente código para almacenar los datos:
 
 ```SQL
 --Creación de la tabla para almacenar los archivos. csv
@@ -24,22 +24,22 @@ Se creo un base de datos SQL (PostgreSQL) en donde se realizara la importación 
 CREATE TABLE IF NOT EXISTS public.historic_values
 (
 	Ticker_Stock      VARCHAR(6) NOT NULL,
-	Fecha             DATE NOT NULL,
-	Precio_apertura   NUMERIC(8,2), 
-	Precio_cierre     NUMERIC(8,2),
-	Maximo            NUMERIC(8,2),
-	Minimo            NUMERIC(8,2), 
-	Volumen           INTEGER,
+	Fecha             VARCHAR(25) NOT NULL,
+	Precio_apertura   VARCHAR(25), 
+	Precio_cierre     VARCHAR(25),
+	Minimo            VARCHAR(25),
+	Maximo            VARCHAR(25), 
+	Volumen           VARCHAR(25),
 	CONSTRAINT historic_values_fecha_simbolo PRIMARY KEY (Ticker_Stock, Fecha)
 )
-
 ```
+En una primera instancia los tipos de datos van a ser varchar para poder importar todos los datos y realizar la limpieza.
 
 Para la importación de los .csv trabajamos con el código:
 
 ```SQL 
 
-COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Minimo,Maximo,Volumen) from 'D:\CSV_2002-2022\Ticker de la accion".csv' WITH DELIMITER ',' CSV;
+COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Minimo,Maximo,Volumen) from 'D:\CSV_2002-2022\"Ticker de la accion".csv' WITH DELIMITER ',' CSV;
 
 ```
 
