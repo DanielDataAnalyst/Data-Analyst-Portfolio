@@ -14,9 +14,9 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 *Nota: La macro esta creada considerando que los .csv se almacenaran en un carpeta de OneDrive donde no es necesario confirmar el guardado.
 
 
-## Creación de base de datos SQL (PostgreSQL) e importación de ficheros .csv
+## Importación y limpieza de datos
 
-Se crea un nueva base de datos con nombre *sp500* y el esquema *public*, dentro del cual se generan una tabla para almacenar los datos con el siguiente código:
+Se creo un base de datos SQL (PostgreSQL) en donde se realizara la importación y limpieza de los archivos. csv, a esta se nombró *sp500* y dentro del esquema *public*, generó una tabla con el siguiente código para almacenar los datos:
 
 ```SQL
 --Creación de la tabla para almacenar los archivos. csv
@@ -35,5 +35,13 @@ CREATE TABLE IF NOT EXISTS public.historic_values
 
 ```
 
+Para la importación de los .csv trabajamos con el código:
 
+```SQL 
+
+COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Minimo,Maximo,Volumen) from 'D:\CSV_2002-2022\Ticker de la accion".csv' WITH DELIMITER ',' CSV;
+
+```
+
+Al ser mas de 500 ficheros a importar era necesario creo una nueva version de la hoja de cálculo inicial en donde estaban los tickers de las acciones.   
 
