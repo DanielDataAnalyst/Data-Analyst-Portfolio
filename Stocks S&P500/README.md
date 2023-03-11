@@ -1,6 +1,6 @@
 # Historial de precios de acciones del S&P500
 
-## Obtención de datos en formato .csv
+## 1. Obtención de datos en formato .csv
 
 Para la obtención de los valores históricos de las acciones del S&P 500 se utilizó la función de Excel **STOCKHISTORY** combinada con una macro. 
 
@@ -14,7 +14,9 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 *Nota: La macro se creó considerando que los .csv se almacenarían en un carpeta de OneDrive donde no es necesario confirmar el guardado.*
 
 
-## Importación y limpieza de datos
+## 2. Importación y limpieza de datos
+
+### 2.1 Creacion de la base de datos tablas
 
 Se creó un base de datos SQL (PostgreSQL) en donde se realizaron los procesos de importación y limpieza de los archivos .csv, a esta se nombró *sp500* y dentro del esquema *public* se generó una tabla con el siguiente código para almacenar los datos:
 
@@ -45,4 +47,6 @@ COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Min
 
 Para importar los mas de 500 ficheros .csv se trabajó con el libro [Listado_Stock_SP500 v2.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/Listado_Stock_SP500%20v2.xlsm). Como se observa éste fue creado a partir de [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) haciendo uso de concatenación de textos para obtener una columna donde en cada fila contiene el código anterior con el ticker correspondiente del stock.
 
-### Busqueda de valores nulos
+### 2.2 Busqueda de valores nulos
+
+
