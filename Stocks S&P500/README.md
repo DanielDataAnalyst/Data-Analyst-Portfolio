@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS public.historic_values
 	CONSTRAINT historic_values_fecha_simbolo PRIMARY KEY (Ticker_Stock, Fecha)
 )
 ```
-En una primera instancia el tipo de dato de los campos fueron definidos como varchar para poder importarlos y realizar la limpieza.
+En una primera instancia el tipo de dato de los campos fueron definidos como varchar para poder cargar los datos y realizar la limpieza.
 
 Para la importación de los .csv trabajamos con el código:
 
@@ -43,5 +43,5 @@ COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Min
 
 ```
 
-Para importar los mas de 500 ficheros .csv se trabajo con el libro [Listado_Stock_SP500 v2.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/Listado_Stock_SP500%20v2.xlsm). Como se observa fue creado a partir de [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) haciendo uso de concatenacion de textos para obtener una columna donde en cada fila contiene el código anterior con el ticker correspondiente del stock.
+Para importar los mas de 500 ficheros .csv se trabajoó con el libro [Listado_Stock_SP500 v2.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/Listado_Stock_SP500%20v2.xlsm). Como se observa fue creado a partir de [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) haciendo uso de concatenación de textos para obtener una columna donde en cada fila contiene el código anterior con el ticker correspondiente del stock.
 
