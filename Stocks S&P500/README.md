@@ -48,12 +48,26 @@ Esta tabla tuvo que modificarse para la limpieza con otra donde los tipos de dat
 
 ### 2.2 Busqueda de valores nulos
 
-La búsqueda de los valores nulos se realizo con el siguiente código:
+La búsqueda de los valores nulos se realizo con los siguientes códigos:
 
 ```SQL
 
-SELECT * FROM public.historic_values
+--Cantidad de registros
+SELECT COUNT(*) AS cant_total_registros
+FROM public.historic_values
+
+-- Busqueda de valores nulos
+SELECT * 
+FROM public.historic_values
 WHERE fecha = '#N/A' OR precio_apertura = '#N/A' OR precio_cierre = '#N/A' OR minimo = '#N/A' OR minimo = '#N/A' OR maximo = '#N/A' OR volumen = '#N/A'
+ORDER BY ticker_stock
+
+--- Busqueda de valores nulos agrupados
+SELECT ticker_stock, COUNT(ticker_stock) AS cantidad_nulos
+FROM public.historic_values
+WHERE fecha = '#N/A' OR precio_apertura = '#N/A' OR precio_cierre = '#N/A' OR minimo = '#N/A' OR maximo = '#N/A' OR volumen = '#N/A'
+GROUP BY ticker_stock
+ORDER BY cantidad_nulos
 
 ```
 
