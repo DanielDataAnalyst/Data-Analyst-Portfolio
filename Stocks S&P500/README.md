@@ -69,7 +69,6 @@ Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% d
 |	IEX	|	1	|                                       |	NWL	|	214	|
 |	L	|	1	|                                       |	LNT	|	229	|
 |	MPWR	|	1	|                                       |	LHX	|	349	|                                
-
 |	NVR	|	1	|                                       
 |	OTIS	|	1	|
 |	TYL	|	1	|
