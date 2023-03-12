@@ -59,16 +59,16 @@ WHERE fecha = '#N/A' OR precio_apertura = '#N/A' OR precio_cierre = '#N/A' OR mi
 
 Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% del total, la siguiente tabla muestra la distribucion de cada uno:
 
-|	ticker_stock	|	cantidad_nulos	|                       |	ticker_stock	|	cantidad_nulos	|            
-|	:---:	|	:---:	|                                       |	:---:	|	:---:	|
-|	BIIB	|	1	|                                       |	CBOE	|	140	|
-|	CARR	|	1	|                                       |	UAL	|	145	|
-|	CDAY	|	1	|                                       |	LIN	|	191	|                  
-|	DVA	|	1	|                                       |	REG	|	195	|
-|	FDS	|	1	|                                       |	TER	|	205	|
-|	IEX	|	1	|                                       |	NWL	|	214	|
-|	L	|	1	|                                       |	LNT	|	229	|
-|	MPWR	|	1	|                                       |	LHX	|	349	|                                
+|	ticker_stock	|	cantidad_nulos	|                       
+|	:---:	|	:---:	|                                       
+|	BIIB	|	1	|                                       
+|	CARR	|	1	|                                       
+|	CDAY	|	1	|                                                         
+|	DVA	|	1	|                                       
+|	FDS	|	1	|                                       
+|	IEX	|	1	|                                       
+|	L	|	1	|                                       
+|	MPWR	|	1	|                                                                       
 |	NVR	|	1	|                                       
 |	OTIS	|	1	|
 |	TYL	|	1	|
@@ -78,14 +78,14 @@ Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% d
 |	CTVA	|	4	|
 |	DOW	|	7	|
 |	EVRG	|	49	|
-
-
-
-
-
-
-
-
-
-
+|	CBOE	|	140	|
+|	UAL	|	145	|
+|	LIN	|	191	|
+|	LIN	|	191	| 
+|	LIN	|	191	|
+|	REG	|	195	|
+|	TER	|	205	|
+|	NWL	|	214	|
+|	LNT	|	229	|
+|	LHX	|	349	|
 
