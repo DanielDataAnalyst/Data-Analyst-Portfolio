@@ -109,7 +109,7 @@ Los valores nulos, hasta el ticker **EVRG**, fueron buscados en Yahoo Finance y 
 
 ### 2.3 Búsqueda de valores atípicos
 
-Para realizar este proceso se ejecutó una consulta que mostrara los registros con valores por encima 1.000.000.000
+Para realizar este proceso se ejecutó una consulta que mostrara los registros con valores por encima 1.000.000.000 de acciones transadas en un día, un número muy pocas veces alcanzado. 
 
 ```SQL
 
@@ -128,4 +128,4 @@ Obteniendo la siguiente tabla:
 |BAC	|3|
 |C|	60|
 
-
+DE los 2 primeros se comprobaron las fechas y coincidieron con los volumenes correspondientes. Por otra parte, despues de varios analisis y comprobaciones, se descubrió que la accion C del Citybank presentaba un error en el origen de los datos en que todos sus valores tenian un 0 de más, situación esta que fue corregida en el .csv.
