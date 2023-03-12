@@ -59,29 +59,3 @@ WHERE fecha = '#N/A' OR precio_apertura = '#N/A' OR precio_cierre = '#N/A' OR mi
 Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% del total, la mayoría de estos valores nulos corresponden al volumen diario. 
 Considerando el porcentaje minimo que representan estos registros y el bajo impacto que podrian tener en el analisis estos fueron eliminados.
 
-"BIIB"	1
-"CARR"	1
-"CBOE"	140
-"CDAY"	1
-"CTVA"	4
-"DOW"	7
-"DVA"	1
-"EVRG"	49
-"FDS"	1
-"FOX"	3
-"FOXA"	4
-"GEHC"	3
-"IEX"	1
-"L"	1
-"LHX"	349
-"LIN"	191
-"LNT"	229
-"MPWR"	1
-"MTCH"	618
-"NVR"	1
-"NWL"	214
-"OTIS"	1
-"REG"	195
-"TER"	205
-"TYL"	1
-"UAL"	145
