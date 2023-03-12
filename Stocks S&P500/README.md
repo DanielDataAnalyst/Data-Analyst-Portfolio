@@ -103,3 +103,5 @@ Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% d
 |	LNT	|	229	|
 |	LHX	|	349	|
 
+
+Los valores nulos, hasta el ticker **EVRG**, fueron buscados en Yahoo Finance y sustituidos. De **CBOE** en adelante al ser una cantidad mayor fueron eliminados al no representar registros significativos para los analisis que se realizarán. 
