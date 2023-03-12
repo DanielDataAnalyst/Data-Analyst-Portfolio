@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS public.historic_values
 Esta tabla tuvo que modificarse para la limpieza con otra donde los tipos de datos fueran varchar en todos los campos a raiz de un error producido por la presencia de valores nulos en varios registros. Posterior a la limpieza fue eliminada esta última tabla y sustituida por la mostrada con los tipos de datos adecuados. 
 
 
-### 2.2 Busqueda de valores nulos
+### 2.2 Búsqueda de valores nulos
 
 La búsqueda de los valores nulos se realizo con los siguientes códigos:
 
@@ -105,3 +105,27 @@ Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% d
 
 
 Los valores nulos, hasta el ticker **EVRG**, fueron buscados en Yahoo Finance y sustituidos. De **CBOE** en adelante al ser una cantidad mayor fueron eliminados al no representar registros significativos para los analisis que se realizarán. 
+
+
+### 2.3 Búsqueda de valores atípicos
+
+Para realizar este proceso se ejecutó una consulta que mostrara los registros con valores por encima 1.000.000.000
+
+```SQL
+
+SELECT *
+FROM public.historic_values
+WHERE volumen > 1000000000
+ORDER BY volumen DESC
+
+```
+
+Obteniendo la siguiente tabla:
+
+|	ticker_stock	|	cantidad_nulos	|                       
+|	:---:	|	:---:	|       
+|AIG	|1|
+|BAC	|3|
+|C|	60|
+
+
