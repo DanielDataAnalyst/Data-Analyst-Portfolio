@@ -14,26 +14,7 @@ El código de esta macro se encuentra disponible en los archivos del repositorio
 
 ## 2. Importación y limpieza de datos
 
-### 2.1 Creación de base de datos e importación de registros desde los ficheros .csv
-
-Se creó un base de datos SQL (PostgreSQL) en donde se realizaron los procesos de importación y limpieza de los archivos .csv, a ésta se nombró *sp500* y dentro del esquema *public* de la misma se generó una tabla con el siguiente código para almacenar los datos:
-
-```SQL
---Creación de la tabla para almacenar los archivos. csv
-
-CREATE TABLE IF NOT EXISTS public.historic_values
-(
-	Ticker_Stock      VARCHAR(6) NOT NULL,
-	Fecha             VARCHAR(25) NOT NULL,
-	Precio_apertura   VARCHAR(25), 
-	Precio_cierre     VARCHAR(25),
-	Minimo            VARCHAR(25),
-	Maximo            VARCHAR(25), 
-	Volumen           VARCHAR(25),
-	CONSTRAINT historic_values_fecha_simbolo PRIMARY KEY (Ticker_Stock, Fecha)
-)
-```
-En una primera instancia el tipo de dato de los campos fueron definidos como varchar para poder cargar los datos y realizar la limpieza.
+### 2.1 Importación de registros desde los ficheros .csv y creación de base de datos
 
 Para la importación de los .csv trabajamos con el código:
 
@@ -44,6 +25,26 @@ COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Min
 ```
 
 Al ser más de 500 ficheros .csv se trabajó con el libro [Listado_Stock_SP500 v2.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/Listado_Stock_SP500%20v2.xlsm) que fue creado a partir de [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) haciendo uso de concatenación de textos para obtener una columna donde en cada fila contiene el código anterior con el ticker correspondiente del stock. 
+
+ Además se creó un base de datos SQL (PostgreSQL) en donde se realizaron los procesos de importación y limpieza de los archivos .csv, la que se nombró *sp500* y dentro del esquema *public* de la misma se generó una tabla con el siguiente código para almacenar los datos:
+
+```SQL
+--Creación de la tabla para almacenar los archivos. csv
+
+CREATE TABLE IF NOT EXISTS public.historic_values
+(
+	Ticker_Stock      VARCHAR(6) NOT NULL,
+	Fecha             DATE NOT NULL,
+	Precio_apertura   NUMERIC(8,2), 
+	Precio_cierre     NUMERIC(8,2),
+	Minimo            NUMERIC(8,2),
+	Maximo            NUMERIC(8,2), 
+	Volumen           INTEGER,
+	CONSTRAINT historic_values_fecha_simbolo PRIMARY KEY (Ticker_Stock, Fecha)
+)
+```
+Esta tabla tuvo que modificarse para la limpieza con otra donde los tipos de datos fueran varchar en todos los campos a raiz de un error producido por la presencia de valores nulos en varios registros. Posteriormente a la limpieza fue eliminada esta última tabla y sustituida por la mostrada con los tipos de datos adecuados. 
+
 
 ### 2.2 Busqueda de valores nulos
 
