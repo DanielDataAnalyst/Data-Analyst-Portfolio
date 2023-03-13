@@ -45,7 +45,9 @@ CREATE TABLE IF NOT EXISTS public.historic_values
 ```
 Esta tabla tuvo que modificarse para la limpieza con otra donde los tipos de datos fueran varchar en todos los campos a raiz de un error producido por la presencia de valores nulos en varios registros. Posterior a la limpieza fue eliminada esta última tabla y sustituida por la mostrada con los tipos de datos adecuados. 
 
-También se importó una tabla, obtenida de la [Wikipedia](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) que contiene el ticker de la acción (Primary Key), el nombre, el sector y subsector a que pertenece la empresa. 
+También se importó a Excel una tabla, obtenida de la [Wikipedia](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) que contiene el ticker de la acción (Primary Key), el nombre, el sector y subsector a que pertenece la empresa, el .csv obtenido fue importado a tabla *stock_list* creada dentro de la base de datos con la que se ha estado trabajando.  
+
+
 
 ### 2.2 Búsqueda de valores nulos
 
