@@ -149,4 +149,10 @@ Obteniendo la siguiente tabla:
 De los 2 primeros se comprobaron las fechas y coincidieron con los volumenes correspondientes. Por otra parte, despues de varios analisis y comprobaciones, se descubrió que la accion C del Citybank presentaba un error en el origen de los datos en que todos sus valores tenian un 0 de más, situación esta que fue corregida en el .csv.
 
 
-## 3.Análisis de los datos para 
+## 3. Análisis de los datos 
+
+- Porciento de participación por sector
+- Lugares donde esta ubicada cada empresa
+- Volumenes de operaciones por año 
+- Que empresas tuvieron los mayores volumenes por año
+- Mayores aumento de precios desde el inicio
