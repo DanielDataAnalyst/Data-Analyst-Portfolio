@@ -156,3 +156,4 @@ De los 2 primeros se comprobaron las fechas y coincidieron con los volumenes cor
 - Volumenes de operaciones por año 
 - Que empresas tuvieron los mayores volumenes por año
 - Mayores aumento de precios desde el inicio
+- Analisis de Tesla TSLA
