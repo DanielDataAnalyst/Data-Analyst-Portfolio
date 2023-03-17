@@ -127,6 +127,8 @@ Los valores nulos, hasta el ticker **EVRG**, fueron buscados en Yahoo Finance y 
 
 ### 2.3 Búsqueda de valores atípicos
 
+- Volumenes atipicos
+
 Para realizar este proceso se ejecutó una consulta que mostrara los registros con valores por encima 1.000.000.000 de acciones transadas en un día, un número muy pocas veces alcanzado. 
 
 ```SQL
@@ -148,6 +150,9 @@ Obteniendo la siguiente tabla:
 
 De los 2 primeros se comprobaron las fechas y coincidieron con los volumenes correspondientes. Por otra parte, despues de varios analisis y comprobaciones, se descubrió que la accion C del Citybank presentaba un error en el origen de los datos en que todos sus valores tenian un 0 de más, situación esta que fue corregida en el .csv.
 
+- Ticker de acción no válidos
+
+Al realizar la unión de las tablas *stock_list* e *historic_values*  se generaban varios registros con campos nulos con ticker de las iniciales de los meses del año en ingles (JAN, FEB,...., DEC). Despues de una búsqueda con la macro 
 
 ## 3. Análisis de los datos 
 
