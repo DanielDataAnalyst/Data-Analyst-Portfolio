@@ -148,11 +148,11 @@ Obteniendo la siguiente tabla:
 |BAC	|3|
 |C|	60|
 
-De los 2 primeros se comprobaron las fechas y coincidieron con los volumenes correspondientes. Por otra parte, despues de varios analisis y comprobaciones, se descubrió que la accion C del Citybank presentaba un error en el origen de los datos en que todos sus valores tenian un 0 de más, situación esta que fue corregida en el .csv.
+De los 2 primeros se comprobaron las fechas y coincidieron con los volumenes correspondientes. Por otra parte, se encontró que la accion C del Citybank presentaba un error en el origen de los datos en que todos sus valores tenian un 0 de más, situación esta que fue corregida en el .csv.
 
-- #### Ticker de acción no válidos
+- #### Ticker no válidos
 
-Al realizar la unión de las tablas *stock_list* e *historic_values*  se generaban varios registros con campos nulos con ticker de las iniciales de los meses del año en ingles (JAN, FEB,...., DEC). Despues de una búsqueda en los 503 origenes de datos con ayuda de la macro [buscarValoresJAN.bas](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/buscarValoresJAN.bas) se encontró el .csv con nombre *MAR* cuando fue creado Excel considero que se trataba del mes Marzo e hizo un autorellenado con las iniciales de los meses del año. Lo anterior se modifico en el origen.
+Al realizar la unión de las tablas *stock_list* e *historic_values*  se generaban varios registros con campos nulos con ticker de las iniciales de los meses del año en inglés (JAN, FEB,...., DEC). Después de una búsqueda en los 503 origenes de datos con ayuda de la macro [buscarValoresJAN.bas](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/buscarValoresJAN.bas) se encontró que el .csv con nombre *MAR* cuando fue creado Excel considero que se trataba del mes Marzo e hizo un autorellenado con las iniciales de los meses del año. Lo anterior se modifico en el origen.
 
 ## 3. Análisis de los datos 
 
