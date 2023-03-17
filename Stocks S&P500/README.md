@@ -152,7 +152,7 @@ De los 2 primeros se comprobaron las fechas y coincidieron con los volumenes cor
 
 - Ticker de acción no válidos
 
-Al realizar la unión de las tablas *stock_list* e *historic_values*  se generaban varios registros con campos nulos con ticker de las iniciales de los meses del año en ingles (JAN, FEB,...., DEC). Despues de una búsqueda con la macro 
+Al realizar la unión de las tablas *stock_list* e *historic_values*  se generaban varios registros con campos nulos con ticker de las iniciales de los meses del año en ingles (JAN, FEB,...., DEC). Despues de una búsqueda en los 503 origenes de datos con ayuda de la macro 
 
 ## 3. Análisis de los datos 
 
