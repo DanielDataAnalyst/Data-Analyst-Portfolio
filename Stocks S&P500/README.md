@@ -156,7 +156,7 @@ Al realizar la unión de las tablas *stock_list* e *historic_values*  se generab
 
 ## 3. Análisis de los datos 
 
-- Participación por sector
+- #### Participación por sector
 
 Mediante la siguiente consulta obtenemos la cantidad de empresas que existe en cada sector del indice así como el porcentaje que representa cada una del total.
 
@@ -191,9 +191,9 @@ Con lo que obtenemos la tabla:
 
 Como se observa el primer lugar se lo lleva el sector de las TI con 75 empresas participantes en el índice que representa casi el 15% del total, le sigue el sector Industrial con 69 empresas (13.72%) y las empresas financieras (13.12%) con 66.
 
-- Lugares donde esta ubicada cada empresa
+- #### Ubicación
 
-Ahora veamos como agrupan por estado de los Estados Unidos. Para ellos usamos la consulta:
+Ahora veamos como agrupan por ubicación geografica dentro de Estados Unidos. Para ellos usamos la consulta:
 
 ```SQL
 
@@ -206,6 +206,49 @@ GROUP BY ciudad
 ORDER BY Total DESC
 
 ```
+
+|	ranking	|	estado	|	total	|	porcentaje_total	|
+|	:---:	|	:---:	                |	:---:	|	:---:	|   
+|	1	|	California	|	70	|	13.92%	|
+|	2	|	New York	|	54	|	10.74%	|
+|	3	|	Texas	|	45	|	8.95%	|
+|	4	|	Illinois	|	34	|	6.76%	|
+|	5	|	Foreign	|	22	|	4.37%	|
+|	6	|	Massachusetts	|	21	|	4.17%	|
+|	7	|	Ohio	|	20	|	3.98%	|
+|	8	|	Pennsylvania	|	19	|	3.78%	|
+|	9	|	Georgia	|	18	|	3.58%	|
+|	10	|	North Carolina	|	16	|	3.18%	|
+|	10	|	Florida	|	16	|	3.18%	|
+|	11	|	New Jersey	|	15	|	2.98%	|
+|	11	|	Virginia	|	15	|	2.98%	|
+|	12	|	Minnesota	|	14	|	2.78%	|
+|	13	|	Washington	|	13	|	2.58%	|
+|	13	|	Connecticut	|	13	|	2.58%	|
+|	14	|	Michigan	|	11	|	2.19%	|
+|	15	|	Arizona	|	8	|	1.59%	|
+|	15	|	Tennessee	|	8	|	1.59%	|
+|	15	|	Indiana	|	8	|	1.59%	|
+|	16	|	Colorado	|	7	|	1.39%	|
+|	16	|	Wisconsin	|	7	|	1.39%	|
+|	16	|	Maryland	|	7	|	1.39%	|
+|	17	|	Missouri	|	6	|	1.19%	|
+|	18	|	Oklahoma	|	4	|	0.80%	|
+|	18	|	Nevada	|	4	|	0.80%	|
+|	18	|	Rhode Island	|	4	|	0.80%	|
+|	19	|	Kentucky	|	3	|	0.60%	|
+|	19	|	Arkansas	|	3	|	0.60%	|
+|	19	|	Louisiana	|	3	|	0.60%	|
+|	20	|	Utah	|	2	|	0.40%	|
+|	20	|	Nebraska	|	2	|	0.40%	|
+|	20	|	Alabama	|	2	|	0.40%	|
+|	20	|	Delaware	|	2	|	0.40%	|
+|	20	|	Washington D. C.	|	2	|	0.40%	|
+|	20	|	Idaho	|	2	|	0.40%	|
+|	21	|	Maine	|	1	|	0.20%	|
+|	21	|	Oregon	|	1	|	0.20%	|
+|	21	|	Iowa	|	1	|	0.20%	|
+
 
 
 
