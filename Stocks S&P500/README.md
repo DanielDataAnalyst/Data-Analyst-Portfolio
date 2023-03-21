@@ -207,6 +207,7 @@ ORDER BY Total DESC
 
 ```
 
+
 |	ranking	|	estado	|	total	|	porcentaje_total	|
 |	:---:	|	:---:	                |	:---:	|	:---:	|   
 |	1	|	California	|	70	|	13.92%	|
@@ -250,9 +251,9 @@ ORDER BY Total DESC
 |	21	|	Iowa	|	1	|	0.20%	|
 
 
-
-
 - Volumenes de operaciones por año 
+
+
 - Que empresas tuvieron los mayores volumenes por año
 - Mayores aumento de precios desde el inicio
 - Analisis de Tesla TSLA
