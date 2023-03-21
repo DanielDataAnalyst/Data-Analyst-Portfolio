@@ -193,18 +193,20 @@ Como se observa el primer lugar se lo lleva el sector de las TI con 75 empresas 
 
 - Lugares donde esta ubicada cada empresa
 
-Ahora veamos como agrupan por ciudades de los Estados Unidos. Para ellos usamos la consulta:
+Ahora veamos como agrupan por estado de los Estados Unidos. Para ellos usamos la consulta:
 
 ```SQL
 
 SELECT  DENSE_RANK () OVER (ORDER BY COUNT(ticker_stock) DESC) AS Ranking,
-		ciudad,
-		COUNT(ticker_stock) AS Total
+		ciudad AS Estado,
+		COUNT(ticker_stock) AS Total,
+		CONCAT(ROUND((COUNT(ticker_stock) * 100/SUM(COUNT(ticker_stock)) OVER()),2),'%') AS Porcentaje_total
 FROM public.stock_list
 GROUP BY ciudad
 ORDER BY Total DESC
 
 ```
+
 
 
 - Volumenes de operaciones por año 
