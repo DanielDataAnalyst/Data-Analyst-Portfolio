@@ -193,7 +193,7 @@ Como se observa el primer lugar se lo lleva el sector de las TI con 75 empresas 
 
 - #### Ubicación
 
-Ahora veamos como agrupan por ubicación geografica dentro de Estados Unidos. Para ellos usamos la consulta:
+Ahora veamos como agrupan por ubicación geografica. Para ellos usamos la consulta:
 
 ```SQL
 
