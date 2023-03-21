@@ -189,9 +189,24 @@ Con lo que obtenemos la tabla:
 |	11	|	Energy	                |	23	|	4.57%	|
 |	12	|	 Inc.	                |	9	|	1.79%	|
 
-
+Como se observa el primer lugar se lo lleva el sector de las TI con 75 empresas participantes en el índice que representa casi el 15% del total, le sigue el sector Industrial con 69 empresas (13.72%) y las empresas financieras (13.12%) con 66.
 
 - Lugares donde esta ubicada cada empresa
+
+Ahora veamos como ubican por ciudades de los Estados Unidos. Para ellos usamos la consulta:
+
+```SQL
+
+SELECT  DENSE_RANK () OVER (ORDER BY COUNT(ticker_stock) DESC) AS Ranking,
+		ciudad,
+		COUNT(ticker_stock) AS Total
+FROM public.stock_list
+GROUP BY ciudad
+ORDER BY Total DESC
+
+```
+
+
 - Volumenes de operaciones por año 
 - Que empresas tuvieron los mayores volumenes por año
 - Mayores aumento de precios desde el inicio
