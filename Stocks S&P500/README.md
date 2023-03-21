@@ -250,8 +250,10 @@ ORDER BY Total DESC
 |	21	|	Oregon	|	1	|	0.20%	|
 |	21	|	Iowa	|	1	|	0.20%	|
 
+*Nota: Foreign agrupa todas las empresas con sede fuera de Estados Unidos*
 
-- Volumenes de operaciones por año 
+
+- #### Volumenes de operaciones por año 
 
 
 - Que empresas tuvieron los mayores volumenes por año
