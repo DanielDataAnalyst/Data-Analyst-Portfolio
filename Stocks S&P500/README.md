@@ -193,7 +193,7 @@ Como se observa el primer lugar se lo lleva el sector de las TI con 75 empresas 
 
 - Lugares donde esta ubicada cada empresa
 
-Ahora veamos como ubican por ciudades de los Estados Unidos. Para ellos usamos la consulta:
+Ahora veamos como agrupan por ciudades de los Estados Unidos. Para ellos usamos la consulta:
 
 ```SQL
 
