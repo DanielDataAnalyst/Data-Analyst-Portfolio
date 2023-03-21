@@ -156,7 +156,38 @@ Al realizar la unión de las tablas *stock_list* e *historic_values*  se generab
 
 ## 3. Análisis de los datos 
 
-- Porciento de participación por sector
+- Participación por sector
+
+Mediante la siguiente consulta obtenemos la cantidad de empresas que existe en cada sector del indice así como el porcentaje que representa cada una del total.
+
+```SQL
+
+SELECT  RANK () OVER (ORDER BY COUNT(ticker_stock) DESC) AS Ranking,
+		sector, 
+		COUNT(ticker_stock) AS Total,
+		CONCAT(ROUND((COUNT(ticker_stock) * 100/SUM(COUNT(ticker_stock)) OVER()),2),'%') AS Porcentaje_total
+FROM public.stock_list
+GROUP BY sector
+ORDER BY Total DESC
+
+```
+
+Con lo que obtenemos la tabla:
+
+|"ranking"   |	"sector"	|"total"|	|"porcentaje_total"|
+|1	|"Information Technology"|	75|	"14.91%"|
+|2	|"Industrials"	|69|	"13.72%"|
+|3	|"Financials"	|66|	"13.12%"|
+|4	|"Health Care"	|64|	"12.72%"|
+|5	|"Consumer Discretionary"	|51|	"10.14%"|
+|6	|"Consumer Staples"	|33|	"6.56%"|
+|7	|"Utilities"	|30|	"5.96%"|
+|8	|"Materials"	|29|	"5.77%"|
+|8	|"Real Estate"	|29|	"5.77%"|
+|10	|"Communication Services"	|25|	"4.97%"|
+|11	|"Energy"	|23|	"4.57%"|
+|12	|" Inc."	|9|	"1.79%"|
+
 - Lugares donde esta ubicada cada empresa
 - Volumenes de operaciones por año 
 - Que empresas tuvieron los mayores volumenes por año
