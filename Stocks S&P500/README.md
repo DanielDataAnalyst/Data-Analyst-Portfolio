@@ -158,7 +158,7 @@ Al realizar la unión de las tablas *stock_list* e *historic_values*  se generab
 
 - #### Participación por sector
 
-Mediante la siguiente consulta obtenemos la cantidad de empresas que existe en cada sector del indice así como el porcentaje que representa cada una del total.
+Mediante la siguiente consulta obtenemos la cantidad de empresas que existe por sector en este índice así como el porcentaje que representa cada una del total.
 
 ```SQL
 
