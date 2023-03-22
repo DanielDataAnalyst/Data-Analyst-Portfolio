@@ -1,7 +1,7 @@
 # Introducción
 
 El índice Standard & Poor's 500 (Standard & Poor's 500 Index), también conocido como S&P 500, es uno de los índices bursátiles más importantes de Estados Unidos. Se le considera el índice más representativo de la situación real del mercado. Se basa en la capitalización bursátil de 503 grandes empresas que poseen acciones que cotizan en las bolsas NYSE o NASDAQ, y captura aproximadamente el 80% de toda la capitalización de mercado en Estados Unidos. 
-En este proyecto trabajaremos con los datos de las cotizaciones diarias de este índice en un período de 20 años comprendido entre los años 2002-2022. A partir de estos datos y haciendo uso de varias herramientas para su manipulacion y transformacion llegaremos a una serie de conclusiones.
+En este proyecto trabajaremos con los datos de las cotizaciones diarias de este índice en un período de 21 años comprendido entre 2002-2022. A partir de estos datos y haciendo uso de varias herramientas para su manipulación y transformación conoceremos la composición por sector y la ubicación de las empresas que lo conforman, los volumenes totales de operación por año y las empresas que más han aportado anualmente a este indicador, también veremos que empresas han tenido los mejores rendimientos en las cotizaciones desde el inicio del período analizado hasta la actualidad y analizaremos el comportamiento de una de las empresas preferidas para invertir en los ultimos años: Tesla.
 
 ## 1. Obtención de datos en formato .csv
 
