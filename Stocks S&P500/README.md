@@ -255,7 +255,7 @@ ORDER BY Total DESC
 
 - #### Volumenes de operaciones por año 
 
-|	Year	|	Total_volumen	         | Variacion interanual |                      
+|	Year	|	Total_volumen	         | Variación interanual |                      
 |	:---:	|	:---:	                 |     :---:    |
 |	2002	|	 281,190,169,546.00 	 | 	0	|
 |	2003	|	 272,024,315,460.00 	 | 	-3.37%	|
