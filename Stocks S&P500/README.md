@@ -28,7 +28,7 @@ COPY public.historic_values(Ticker_Stock,Fecha,Precio_apertura,Precio_cierre,Min
 
 Al ser más de 500 ficheros .csv se trabajó con el libro [Listado_Stock_SP500 v2.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/blob/main/Stocks%20S%26P500/Listado_Stock_SP500%20v2.xlsm) que fue creado a partir de [Listado_Stock_SP500.xlsm](https://github.com/DanielDataAnalyst/Data-Analyst-Portfolio/tree/main/Stocks%20S%26P500) haciendo uso de concatenación de textos para obtener una columna donde en cada fila contiene el código anterior con el ticker correspondiente del stock. 
 
- Además se creó un base de datos SQL (PostgreSQL) en donde se realizaron los procesos de importación y limpieza de los archivos .csv, la que se nombró *sp500* y dentro del esquema *public* de la misma se generó una tabla con el siguiente código para almacenar los datos:
+ Además se creó una base de datos SQL (PostgreSQL) en donde se realizaron los procesos de importación y limpieza de los archivos .csv, la que se nombró *sp500* y dentro del esquema *public* de la misma se generó una tabla con el siguiente código para almacenar los datos:
 
 ```SQL
 --Creación de la tabla para almacenar los archivos. csv
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS public.stock_list
 
 ### 2.2 Búsqueda de valores nulos
 
-La búsqueda de los valores nulos se realizo con los siguientes códigos:
+La búsqueda de los valores nulos se realizó con los siguientes códigos:
 
 ```SQL
 
