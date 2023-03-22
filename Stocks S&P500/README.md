@@ -279,7 +279,7 @@ ORDER BY Total DESC
 |	2021	|	 549,577,711,672 	|
 |	2022	|	 625,236,404,255 	|
 
-![graph_visualiser-1679446091677](https://user-images.githubusercontent.com/125587676/226773623-f86b0bb1-6ffd-402f-bc24-bab77f4c4a14.png)
+![image](https://user-images.githubusercontent.com/125587676/226774673-817b30bb-e484-40c0-a22e-7911c9419cbc.png)
 
 
 - Que empresas tuvieron los mayores volumenes por año
