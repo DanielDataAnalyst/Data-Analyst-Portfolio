@@ -255,6 +255,19 @@ ORDER BY Total DESC
 
 - #### Volumenes de operaciones por año 
 
+Para conocer como se ha comportado este indicador en el transcurso de los años del periodo analizado usaremos la siguiente consulta:
+
+```SQL
+SELECT EXTRACT(YEAR FROM fecha) AS Year,
+	   SUM(volumen) AS Total_volumen,
+	   CONCAT(ROUND((SUM(volumen) - LAG(SUM(volumen)) OVER())*100/SUM(volumen),2),'%') AS variacion_anual
+FROM public.historic_values
+GROUP BY Year
+ORDER BY Year
+```
+
+Con la que obtenemos la tabla:
+
 |	Year	|	Total_volumen	         | Variación interanual |                      
 |	:---:	|	:---:	                 |     :---:    |
 |	2002	|	 281,190,169,546.00 	 | 	0	|
@@ -279,12 +292,11 @@ ORDER BY Total DESC
 |	2021	|	 549,577,711,672.00 	 | 	-23.90%	|
 |	2022	|	 625,236,404,255.00 	 | 	12.10%	|
 
-Para tener una visión m{as clara se graficará esta tabla.
+Para tener una visión más clara se graficará esta tabla.
 
 ![image](https://user-images.githubusercontent.com/125587676/226775438-d008e204-9476-4c64-87d6-cd8a7e450a75.png)
 
-Como se observa hubo un aumento considerable de los volumenes de operaciones desde el año 2007 alcanzando su pick en el año 2009, motivado fundamentalmente por la crisis financiera de estos años y todo lo que generó en los mercados financieros. También vemos otro máximo en el año 2020 producido por la crisis producida por la pandemia. 
-
+Como se observa hubo un aumento considerable de los volumenes de operaciones desde el año 2007 alcanzando su pick en el año 2009, motivado fundamentalmente por la crisis financiera de estos años y todo lo que generó en los mercados financieros. También vemos otro máximo en el año 2020 producido por la crisis pandemica. 
 
 - Que empresas tuvieron los mayores volumenes por año
 - Mayores aumento de precios desde el inicio
