@@ -89,7 +89,7 @@ ORDER BY cantidad_nulos
 
 ```
 
-Se obtuvieron 2368 registros de un total de 2359346 lo cual representa un 0.1% del total, la siguiente tabla muestra la distribucion de cada uno:
+Se obtuvieron 2368 registros nulos de un total de 2359346 lo cual representa un 0.1% del total, la siguiente tabla muestra la distribucion de cada uno:
 
 |	ticker_stock	|	cantidad_nulos	|                       
 |	:---:	|	:---:	|                                       
