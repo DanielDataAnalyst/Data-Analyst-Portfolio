@@ -299,6 +299,7 @@ Para tener una visión más clara se graficará esta tabla.
 
 Como se observa hubo un aumento considerable de los volumenes de operaciones desde el año 2007 alcanzando su pick en el año 2009, motivado fundamentalmente por la crisis financiera de estos años y todo lo que generó en los mercados financieros. También vemos otro máximo en el año 2020 producido por la crisis pandemica. 
 
-- Que empresas tuvieron los mayores volumenes por año
 - Mayores aumento de precios desde el inicio
+
+
 - Analisis de Tesla TSLA
