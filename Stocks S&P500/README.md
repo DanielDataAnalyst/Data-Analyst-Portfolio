@@ -374,7 +374,7 @@ Para los mínimos se elimina de la penultima linea de la consulta la palabra **D
 |	META	|	Meta Platforms	|	Communication Services	|	 $338,30 	|	 $120,34 	|	-64,43%	|
 |	PYPL	|	PayPal	|	Information Technology	|	 $191,41 	|	 $71,22 	|	-62,79%	|
 |	VFC	|	VF Corporation	|	Consumer Discretionary	|	 $73,72 	|	 $27,61 	|	-62,55%	|
-![image](https://user-images.githubusercontent.com/125587676/234159907-36b41c2e-8abe-4744-afaa-b6201647031e.png)
+
 
 
 - Analisis de Tesla TSLA
