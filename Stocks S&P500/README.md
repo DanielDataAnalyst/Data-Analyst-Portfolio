@@ -345,7 +345,7 @@ LIMIT 10
 **Máximos**
 
 |	ranking	|	sector	|	total	|	porcentaje_total	|
-|	:---:	|	:---:	                 |     :---:    |
+|	:---:	|	:---:	|     :---:    |                    :---:    |  
 |	1	|	Information Technology	|	75	|	14.91%	|
 |	2	|	Industrials	|	69	|	13.72%	|
 |	3	|	Financials	|	66	|	13.12%	|
