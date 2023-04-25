@@ -383,7 +383,7 @@ Si se quisiera conocer estos valores de otro año solo sería necesario modifica
 WHERE EXTRACT(YEAR FROM fecha) = 2022
 ```
 
-En las tablas se muestra que en el año 2022 se vieron favorecidas en su precio, acciones del sector de la energia, siendo el 90% de las 10 que más aumentaron su valor de esta rubro. Mientras que las empresas Financieras y de Tecnologias fueron las más afectadas. Es particularmente remarcable el caso de META, la matriz de Facebook, Instagram y Whatsapp que vio caer su valor mas de un 60%.
+En las tablas se muestra que en el año 2022 se vieron favorecidas en su precio, acciones del sector de la energia, representandos estas el 90% de las 10 que más aumentaron su valor de esta rubro. Mientras que las empresas Financieras y de Tecnologias fueron las más afectadas. Es particularmente remarcable el caso de META y Tesla las que vieron caer su valor mas de un 60%.
 
 
 - Analisis de Tesla TSLA
