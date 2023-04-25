@@ -343,7 +343,7 @@ ORDER BY variacion_anual_pct DESC
 LIMIT 10
 ```
 
-**Máximos**
+**Ranking aumentos porcentuales de precios**
 
 |	ticker_stock	|	nombre	|	sector	|	precio_inicio_aÃ±o	|	precio_fin_aÃ±o	|	variacion_anual_pct	|
 |	:---:	|	:---:	                |	:---:	|	:---:	|   	:---:	|	:---:	|
@@ -358,7 +358,7 @@ LIMIT 10
 |	VLO	|	Valero Energy	|	Energy	|	 $75,80 	|	 $126,86 	|	67,36%	|
 |	MRO	|	Marathon Oil	|	Energy	|	 $16,42 	|	 $27,07 	|	64,86%	|
 
-**Minimos**
+**Ranking disminuciones porcentuales de precios**
 
 Para los mínimos se elimina de la penultima linea de la consulta la palabra **DESC**
 
@@ -375,6 +375,12 @@ Para los mínimos se elimina de la penultima linea de la consulta la palabra **D
 |	PYPL	|	PayPal	|	Information Technology	|	 $191,41 	|	 $71,22 	|	-62,79%	|
 |	VFC	|	VF Corporation	|	Consumer Discretionary	|	 $73,72 	|	 $27,61 	|	-62,55%	|
 
+
+Si se quisiera conocer estos valores de otro año solo sería necesario modificar el valor 2022 en la linea: 
+
+```SQL
+WHERE EXTRACT(YEAR FROM fecha) = 2022
+```
 
 
 - Analisis de Tesla TSLA
