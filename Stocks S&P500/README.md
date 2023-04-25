@@ -358,6 +358,7 @@ LIMIT 10
 |	VLO	|	Valero Energy	|	Energy	|	 $75,80 	|	 $126,86 	|	67,36%	|
 |	MRO	|	Marathon Oil	|	Energy	|	 $16,42 	|	 $27,07 	|	64,86%	|
 
+
 **Ranking disminuciones porcentuales de precios**
 
 Para los mínimos se elimina de la penultima linea de la consulta la palabra **DESC**
@@ -381,6 +382,8 @@ Si se quisiera conocer estos valores de otro año solo sería necesario modifica
 ```SQL
 WHERE EXTRACT(YEAR FROM fecha) = 2022
 ```
+
+En las tablas se muestra que en el año 2022 se vieron favorecidas en su precio, acciones del sector de la energia, siendo el 90% de las 10 que más aumentaron su valor de esta rubro. Mientras que las empresas Financieras y de Tecnologias fueron las más afectadas. Es particularmente remarcable el caso de META, la matriz de Facebook, Instagram y Whatsapp que vio caer su valor mas de un 60%.
 
 
 - Analisis de Tesla TSLA
