@@ -299,7 +299,8 @@ Para tener una visión más clara se graficará esta tabla.
 
 Como se observa hubo un aumento considerable de los volumenes de operaciones desde el año 2007 alcanzando su pick en el año 2009, motivado fundamentalmente por la crisis financiera de estos años y todo lo que generó en los mercados financieros. También vemos otro máximo en el año 2020 producido por la crisis pandemica. 
 
-- Mayores aumento de precios anuales
+
+- **Mayores variaciones de precios anuales**
 
 Para obtener las 10 acciones que mayores aumentos y disminuciones de precios han tenido en el año 2022 se usara la siguiente consulta
 
@@ -357,14 +358,22 @@ LIMIT 10
 |	VLO	|	Valero Energy	|	Energy	|	 $75,80 	|	 $126,86 	|	67,36%	|
 |	MRO	|	Marathon Oil	|	Energy	|	 $16,42 	|	 $27,07 	|	64,86%	|
 
+**Minimos**
 
+Para los mínimos se elimina de la penultima linea de la consulta la palabra **DESC**
 
-
-
-
-
-
-
+|	ticker_stock	|	nombre	|	sector	|	precio_inicio_aÃ±o	|	precio_fin_aÃ±o	|	variacion_anual_pct	|
+|	:---:	|	:---:	                |	:---:	|	:---:	|   	:---:	|	:---:	|
+|	GNRC	|	Generac	|	Industrials	|	 $353,98 	|	 $100,66 	|	-72%	|
+|	MTCH	|	Match Group	|	Communication Services	|	 $132,90 	|	 $41,49 	|	-69%	|
+|	ALGN	|	Align Technology	|	Health Care	|	 $656,30 	|	 $210,90 	|	-68%	|
+|	TSLA	|	Tesla	|	 Inc.	|	 $382,58 	|	 $123,18 	|	-68%	|
+|	SIVB	|	SVB Financial	|	Financials	|	 $683,70 	|	 $230,14 	|	-66%	|
+|	CTLT	|	Catalent	|	Health Care	|	 $128,03 	|	 $45,01 	|	-65%	|
+|	SBNY	|	Signature Bank	|	Financials	|	 $325,97 	|	 $115,22 	|	-65%	|
+|	META	|	Meta Platforms	|	Communication Services	|	 $338,30 	|	 $120,34 	|	-64%	|
+|	PYPL	|	PayPal	|	Information Technology	|	 $191,41 	|	 $71,22 	|	-63%	|
+|	VFC	|	VF Corporation	|	Consumer Discretionary	|	 $73,72 	|	 $27,61 	|	-63%	|
 
 
 - Analisis de Tesla TSLA
