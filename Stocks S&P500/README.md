@@ -299,7 +299,70 @@ Para tener una visión más clara se graficará esta tabla.
 
 Como se observa hubo un aumento considerable de los volumenes de operaciones desde el año 2007 alcanzando su pick en el año 2009, motivado fundamentalmente por la crisis financiera de estos años y todo lo que generó en los mercados financieros. También vemos otro máximo en el año 2020 producido por la crisis pandemica. 
 
-- Mayores aumento de precios desde el inicio
+- Mayores aumento de precios anuales
+
+Para obtener las 10 acciones que mayores aumentos y disminuciones de precios han tenido en el año 2022 se usara la siguiente consulta
+
+```SQL
+WITH range_date AS
+    (	
+	SELECT MIN(fecha) AS first_day,
+	   	   MAX(fecha) AS last_day
+	FROM public.historic_values
+	WHERE EXTRACT(YEAR FROM fecha) = 2022
+    ),
+ 
+ precio_inicio_año AS
+	(
+	SELECT  ticker_stock,
+			precio_apertura AS precio_inicio_año
+	FROM public.historic_values
+	WHERE fecha = (SELECT first_day FROM range_date)
+	),
+	
+precio_fin_año AS
+	(SELECT  ticker_stock,
+			precio_cierre AS precio_fin_año
+	FROM public.historic_values
+	WHERE fecha = (SELECT last_day FROM range_date)
+	)
+
+SELECT pi.ticker_stock,
+	   sl.nombre,
+	   sl.sector,
+	   pi.precio_inicio_año,
+	   pf.precio_fin_año,
+	   ROUND((pf.precio_fin_año - pi.precio_inicio_año)*100/pi.precio_inicio_año,2) AS variacion_anual_pct
+FROM precio_inicio_año AS pi
+INNER JOIN precio_fin_año as pf
+ON pi.ticker_stock = pf.ticker_stock
+INNER JOIN stock_list AS sl
+ON pi.ticker_stock = sl.ticker_stock
+ORDER BY variacion_anual_pct DESC
+LIMIT 10
+```
+
+**Máximos**
+
+|	ranking	|	sector	|	total	|	porcentaje_total	|
+|	:---:	|	:---:	                 |     :---:    |
+|	1	|	Information Technology	|	75	|	14.91%	|
+|	2	|	Industrials	|	69	|	13.72%	|
+|	3	|	Financials	|	66	|	13.12%	|
+|	4	|	Health Care	|	64	|	12.72%	|
+|	5	|	Consumer Discretionary	|	51	|	10.14%	|
+|	6	|	Consumer Staples	|	33	|	6.56%	|
+|	7	|	Utilities	|	30	|	5.96%	|
+|	8	|	Materials	|	29	|	5.77%	|
+|	8	|	Real Estate	|	29	|	5.77%	|
+|	10	|	Communication Services	|	25	|	4.97%	|
+|	11	|	Energy	|	23	|	4.57%	|
+|	12	|	 Inc.	|	9	|	1.79%	|
+
+
+
+
+
 
 
 - Analisis de Tesla TSLA
