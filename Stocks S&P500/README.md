@@ -344,20 +344,21 @@ LIMIT 10
 
 **Máximos**
 
-|	ranking	|	sector	|	total	|	porcentaje_total	|
-|	:---:	|	:---:	|     :---:    |                    :---:    |  
-|	1	|	Information Technology	|	75	|	14.91%	|
-|	2	|	Industrials	|	69	|	13.72%	|
-|	3	|	Financials	|	66	|	13.12%	|
-|	4	|	Health Care	|	64	|	12.72%	|
-|	5	|	Consumer Discretionary	|	51	|	10.14%	|
-|	6	|	Consumer Staples	|	33	|	6.56%	|
-|	7	|	Utilities	|	30	|	5.96%	|
-|	8	|	Materials	|	29	|	5.77%	|
-|	8	|	Real Estate	|	29	|	5.77%	|
-|	10	|	Communication Services	|	25	|	4.97%	|
-|	11	|	Energy	|	23	|	4.57%	|
-|	12	|	 Inc.	|	9	|	1.79%	|
+|	ticker_stock	|	nombre	|	sector	|	precio_inicio_aÃ±o	|	precio_fin_aÃ±o	|	variacion_anual_pct	|
+|	:---:	|	:---:	                |	:---:	|	:---:	|   	:---:	|	:---:	|
+|	OXY	|	Occidental Petroleum	|	Energy	|	29.21	|	62.99	|	115.65	|
+|	HES	|	Hess Corporation	|	Energy	|	73.9	|	141.82	|	91.91	|
+|	MPC	|	Marathon Petroleum	|	Energy	|	64.44	|	116.39	|	80.62	|
+|	XOM	|	ExxonMobil	|	Energy	|	61.24	|	110.3	|	80.11	|
+|	SLB	|	Schlumberger	|	Energy	|	30.07	|	53.46	|	77.79	|
+|	APA	|	APA Corporation	|	Energy	|	27.08	|	46.68	|	72.38	|
+|	FSLR	|	First Solar	|	Information Technology	|	88.01	|	149.79	|	70.2	|
+|	HAL	|	Halliburton	|	Energy	|	23.14	|	39.35	|	70.05	|
+|	VLO	|	Valero Energy	|	Energy	|	75.8	|	126.86	|	67.36	|
+|	MRO	|	Marathon Oil	|	Energy	|	16.42	|	27.07	|	64.86	|
+
+
+
 
 
 
