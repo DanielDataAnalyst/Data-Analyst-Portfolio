@@ -364,16 +364,17 @@ Para los mínimos se elimina de la penultima linea de la consulta la palabra **D
 
 |	ticker_stock	|	nombre	|	sector	|	precio_inicio_aÃ±o	|	precio_fin_aÃ±o	|	variacion_anual_pct	|
 |	:---:	|	:---:	                |	:---:	|	:---:	|   	:---:	|	:---:	|
-|	GNRC	|	Generac	|	Industrials	|	 $353,98 	|	 $100,66 	|	-72%	|
-|	MTCH	|	Match Group	|	Communication Services	|	 $132,90 	|	 $41,49 	|	-69%	|
-|	ALGN	|	Align Technology	|	Health Care	|	 $656,30 	|	 $210,90 	|	-68%	|
-|	TSLA	|	Tesla	|	 Inc.	|	 $382,58 	|	 $123,18 	|	-68%	|
-|	SIVB	|	SVB Financial	|	Financials	|	 $683,70 	|	 $230,14 	|	-66%	|
-|	CTLT	|	Catalent	|	Health Care	|	 $128,03 	|	 $45,01 	|	-65%	|
-|	SBNY	|	Signature Bank	|	Financials	|	 $325,97 	|	 $115,22 	|	-65%	|
-|	META	|	Meta Platforms	|	Communication Services	|	 $338,30 	|	 $120,34 	|	-64%	|
-|	PYPL	|	PayPal	|	Information Technology	|	 $191,41 	|	 $71,22 	|	-63%	|
-|	VFC	|	VF Corporation	|	Consumer Discretionary	|	 $73,72 	|	 $27,61 	|	-63%	|
+|	GNRC	|	Generac	|	Industrials	|	 $353,98 	|	 $100,66 	|	-71,56%	|
+|	MTCH	|	Match Group	|	Communication Services	|	 $132,90 	|	 $41,49 	|	-68,78%	|
+|	ALGN	|	Align Technology	|	Health Care	|	 $656,30 	|	 $210,90 	|	-67,87%	|
+|	TSLA	|	Tesla	|	 Inc.	|	 $382,58 	|	 $123,18 	|	-67,80%	|
+|	SIVB	|	SVB Financial	|	Financials	|	 $683,70 	|	 $230,14 	|	-66,34%	|
+|	CTLT	|	Catalent	|	Health Care	|	 $128,03 	|	 $45,01 	|	-64,84%	|
+|	SBNY	|	Signature Bank	|	Financials	|	 $325,97 	|	 $115,22 	|	-64,65%	|
+|	META	|	Meta Platforms	|	Communication Services	|	 $338,30 	|	 $120,34 	|	-64,43%	|
+|	PYPL	|	PayPal	|	Information Technology	|	 $191,41 	|	 $71,22 	|	-62,79%	|
+|	VFC	|	VF Corporation	|	Consumer Discretionary	|	 $73,72 	|	 $27,61 	|	-62,55%	|
+![image](https://user-images.githubusercontent.com/125587676/234159907-36b41c2e-8abe-4744-afaa-b6201647031e.png)
 
 
 - Analisis de Tesla TSLA
